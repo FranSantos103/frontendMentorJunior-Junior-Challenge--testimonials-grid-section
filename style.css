@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body{
+  background-color: #d3d7e4;
+  min-width: 125vw;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(70, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 25px;
+    padding: 20px;
+
+}
+
+.info{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.avatarPerson{
+  width: 3em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+span{
+  font-size: 2rem;
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.description{
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 1.2rem;
+  color:hsl(0, 1%, 66%)
+
+}
+
+.name{
+  font-weight: bold;
+}
+
+.daniel{
+  background-color: #733fc8;
+  grid-column-start: 1;
+  grid-column-end: span 35;
+  grid-row-start: 1;
+  grid-row-end: span 1; 
+  background-image: url(./images/bg-pattern-quotation.svg) ;
+  background-repeat: no-repeat;
+  background-position: right 20px top;
+  color: white;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.jonathan{
+  grid-column-start: 36;
+  grid-column-end: span 16;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  color: white;
+  background-color: #49556b;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.info{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.kira{
+  grid-column: 52 / 68;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 30px;
+  color: #848a95;
+}
+
+.jeanette{
+ grid-column-start: 1;
+  grid-column-end: span 20;
+  grid-row-start: 2;
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 7px;
+  line-height: 30px;
+  color: #848a95;
+}
+
+.patrick{
+  grid-column-start: 21;
+  grid-column-end: span 31;
+  grid-row-start: 2;
+  background-color: #191f2d;
+  color: white;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+body{
+  background-color: #e8e9ec;
+}
+  
+main{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.daniel{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  padding-bottom: 50px;
+  line-height: 30px;
+
+  }
+
+  .jeanette,
+  .jonathan,
+  .kira,
+  .patrick{
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+}
